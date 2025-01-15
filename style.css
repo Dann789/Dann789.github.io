@@ -36,3 +36,8 @@ section {
         transform: translateY(0);
     }
 }
+
+#image {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
