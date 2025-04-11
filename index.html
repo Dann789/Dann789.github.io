@@ -18,7 +18,7 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
       <div class="container">
         <a class="navbar-brand fs-4 fw-bold" href="#">
           <img
@@ -26,7 +26,7 @@
             alt="Logo"
             width="35"
             height="35"
-            class="d-inline-block align-text-top"
+            class="d-inline-block align-text-top me-2"
           />
           Wildan<span class="text-primary">Rama</span>
         </a>
@@ -44,12 +44,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home"
-                >Home</a
-              >
+              <a class="nav-link active" aria-current="page" href="home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="skills">Skills</a>
@@ -76,8 +74,7 @@
           <!-- Diberi animasi ketik -->
           <a
             class="btn btn-primary rounded-pill px-3 py-2 fs-6 fw-semibold"
-            href="file/Muhammad Wildan Ramadhana - CV.pdf"
-            download
+            href="file/Muhammad Wildan Ramadhana - CV.pdf" target="_blank"
             >Download CV
           <i class="bi bi-file-earmark-arrow-down-fill"></i>
           </a
@@ -92,11 +89,57 @@
           />
         </div>
       </div>
-      <div
-        class="d-flex justify-content-center align-items-center flex-column mt-5 fw-bold gap-0"
-      >
-        <a href="#about" class="text-decoration-none text-dark fs-5">More Info</a>
-        <i class="bi bi-caret-down-fill fs-3"></i>
+    </section>
+
+    <section id="about" class="about container mt-5">
+      <h1 class="fw-bolder border-bottom border-4 border-primary pb-1">About Me</h1>
+      <p class="fs-5">I am a business information system student at State Polytechnic of Malang. I have an interest in web development, especially in the frontend. With the knowledge base that I have, I am passionate about creating a very attractive website. I also have a high learning spirit in learning new technologies in order to improve my programming skills in the field of web development.</p>
+      <p class="fs-5">Previously, I also learned about the backend, which made me know how to call and display data from the database to the web page.</p>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h4 class="text-secondary">My Education</h4>
+          <div class="education-item d-flex gap-3 mt-3">
+            <i class="bi bi-1-circle-fill fs-4"></i>
+            <div>
+              <h5>Math & Science</h5>
+              <p>MAN 1 Kota Malang (2020 - 2022)</p>
+            </div>
+          </div>
+          <div class="education-item d-flex gap-3 mt-3">
+            <i class="bi bi-2-circle-fill text-primary fs-4"></i>
+            <div>
+              <h5>Business Information System</h5>
+              <p>Politeknik Negeri Malang (2022 - Present)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-secondary">My Experience</h4>
+          <div class="experience-item d-flex gap-3 mt-3">
+            <i class="bi bi-1-circle-fill fs-4"></i>
+            <div>
+              <h5>Web Development Workshop</h5>
+              <p>Politeknik Negeri Malang (2023)</p>
+              <p class="text-muted">Mempelajari dasar-dasar pengembangan web menggunakan HTML, CSS, dan JavaScript</p>
+            </div>
+          </div>
+          <div class="experience-item d-flex gap-3 mt-3">
+            <i class="bi bi-2-circle-fill text-primary fs-4"></i>
+            <div>
+              <h5>UI/UX Design Workshop</h5>
+              <p>Politeknik Negeri Malang (2023)</p>
+              <p class="text-muted">Belajar prinsip-prinsip desain UI/UX dan implementasinya dalam pengembangan aplikasi</p>
+            </div>
+          </div>
+          <div class="experience-item d-flex gap-3 mt-3">
+            <i class="bi bi-3-circle-fill fs-4"></i>
+            <div>
+              <h5>Hackathon Competition</h5>
+              <p>Politeknik Negeri Malang (2023)</p>
+              <p class="text-muted">Berpartisipasi dalam kompetisi pengembangan aplikasi selama 24 jam</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

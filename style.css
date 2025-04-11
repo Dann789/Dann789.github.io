@@ -5,6 +5,65 @@ section {
 .navbar {
     background-color: white;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #0d6efd;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link.active::after {
+    width: 80%;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
 }
 
 .home h1 {
@@ -15,7 +74,7 @@ section {
     font-size: 48px;
 }
 
-.bi {
+/* .bi {
     animation: bounce 3s infinite linear;
 }
 
@@ -35,9 +94,69 @@ section {
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 #image {
     transition: opacity 1s ease-in-out;
     opacity: 1;
+}
+
+.about h1 {
+    width: fit-content;
+}
+
+.experience-item {
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.experience-item:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+    transform: translateX(5px);
+}
+
+.experience-item h5 {
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.experience-item p {
+    margin-bottom: 0.25rem;
+}
+
+.experience-item .text-muted {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 767.98px) {
+    .experience-item {
+        margin-bottom: 1rem;
+    }
+}
+
+.education-item {
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.education-item:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+    transform: translateX(5px);
+}
+
+.education-item h5 {
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.education-item p {
+    margin-bottom: 0.25rem;
+}
+
+@media (max-width: 767.98px) {
+    .education-item {
+        margin-bottom: 1rem;
+    }
 }
