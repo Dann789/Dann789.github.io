@@ -104,6 +104,9 @@ section {
 .about h1 {
     width: fit-content;
 }
+.skills h1 {
+    width: fit-content;
+}
 
 .experience-item {
     transition: all 0.3s ease;
@@ -158,5 +161,67 @@ section {
 @media (max-width: 767.98px) {
     .education-item {
         margin-bottom: 1rem;
+    }
+}
+
+.skills {
+    padding: 2rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 120px;
+    padding: 1rem;
+    background-color: rgba(13, 110, 253, 0.05);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.skill-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.skill-name {
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.skill-item:hover .skill-logo {
+    transform: scale(1.1);
+}
+
+@media (max-width: 991.98px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skill-item {
+        width: 100px;
     }
 }
